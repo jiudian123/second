@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 Created on Wed Jun 12 14:47:14 2019
@@ -13,7 +14,7 @@ import tensorflow as tf
 from sklearn import metrics   #评估
 
 from rnn_model import TRNNConfig, TextRNN
-from data.cnews_loader import read_vocab, read_category, batch_iter, process_file, build_vocab,export_word2vec_vectors,get_training_word2vec_vectors
+from cnews_loader import read_vocab, read_category, batch_iter, process_file, build_vocab,export_word2vec_vectors,get_training_word2vec_vectors
 
 base_dir = 'HOME\mydata\lstm\data'
 train_dir = os.path.join(base_dir, 'cnewstrain.txt')

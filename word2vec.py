@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 Created on Sun Jun  2 22:17:21 2019
@@ -18,7 +17,6 @@ re_han= re.compile(u"([\u4E00-\u9FD5]+)") # 只保留文字
 class Get_Sentences(object):
     def __init__(self,filenames):
         self.filenames= filenames
-
     def __iter__(self):
         for filename in self.filenames:
             with open(filename, 'r', encoding='utf-8') as f:
@@ -35,7 +33,6 @@ class Get_Sentences(object):
                         yield word
                     except:
                         pass
-
 def train_word2vec(filenames):
     t1 = time.time()
     sentences = Get_Sentences(filenames)

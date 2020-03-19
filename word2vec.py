@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 Created on Sun Jun  2 22:17:21 2019
@@ -5,7 +6,7 @@ Created on Sun Jun  2 22:17:21 2019
 @author: zhu
 """
 
-           #encoding:utf-8
+#encoding:utf-8
 import logging
 import time
 import re
